@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . "/CreditCard.php";
+
 class User {
   private $nickname;
   private $email;
@@ -22,6 +24,15 @@ class User {
   }
   public function getEmail(){
     return $this->email;
+  }
+
+
+  public function insertCreditCard($obj){
+    if(strlen($obj->cardholder)>1 && strlen($obj->number)==16 && strlen($obj->expiration)==5){
+      return 'Carta inserita correttamente';
+    }else{
+      return 'Carta non valida';
+    }
   }
 
 }

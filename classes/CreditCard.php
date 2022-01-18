@@ -1,9 +1,9 @@
 <?php
 
 class CreditCard{
-  private $cardholder;
-  private $number;
-  private $expiration;
+  public $cardholder;
+  public $number;
+  public $expiration;
 
   public function __construct($_cardholder, $_number, $_expiration)
   {
