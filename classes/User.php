@@ -27,13 +27,13 @@ class User {
   }
 
 
-  public function insertCreditCard($obj){
-    if(strlen($obj->cardholder)>1 && strlen($obj->number)==16 && strlen($obj->expiration)==5){
-      return 'Carta inserita correttamente';
-    }else{
-      return 'Carta non valida';
-    }
-  }
+  // public function insertCreditCard($obj){
+  //   if(strlen($obj->cardholder)>1 && strlen($obj->number)==16 && strlen($obj->expiration)==5){
+  //     return 'Carta inserita correttamente';
+  //   }else{
+  //     return 'Carta non valida';
+  //   }
+  // }
 
 }
 

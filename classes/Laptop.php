@@ -1,8 +1,11 @@
 <?php
 
 require_once __DIR__ . "/Product.php";
+require_once __DIR__ . "/Details.php";
 
 class Laptop extends Product {
+
+  use Details;
 
   private $ram = 0;
   private $screenSize = 0;
